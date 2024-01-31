@@ -1,0 +1,52 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+
+
+.form-container {
+    background-color: gray;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+.rating {
+    font-size: 1em;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating input + label { 
+    text-shadow: 1px 1px 0 #ffe400;
+    cursor: pointer;
+}
+
+label {
+    font-weight: bolder;
+}
+
+.rating input:checked + label,
+.rating input:checked ~ input + label {
+    color: #ffe400; 
+}
+
+.rating label:active {
+    transform: scale(0.8);
+    transition: 0.3s ease;
+}
